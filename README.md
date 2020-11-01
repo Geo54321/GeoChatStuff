@@ -12,6 +12,6 @@ A Minecraft plugin that just has some silly chat commands
 | Lolsloth | GeoChatStuff.player.lolsloth || /lolsloth | Kicks the user from the server, in place of op-ing them. |
 | Pong | GeoChatStuff.player.pong || /pong | Recreation of the pong command from the old MCNSAChat plugin. |
 | Liz | GeoChatStuff.player.liz | /reeee | /liz | REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE. Targets self. |
-| Liz (targeted) | GeoChatStuff.staff.liz | /reeee | /liz [target] | REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE. Can choose a specific target or @a. |
+| Liz (targeted) | GeoChatStuff.staff.liz | /reeee | /liz [target] | REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE. Can choose a specific target or @a. Defaultly requires op. |
 | War | GeoChatStuff.player.war || /war | Let's the user know that Warrior is the cutest. |
 
