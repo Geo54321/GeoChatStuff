@@ -1,6 +1,8 @@
 # GeoChatStuff
 A Minecraft plugin that just has some silly chat commands
 
+# Commands
+
 | Command | Permission Node | Aliases | Usage | Description |
 |----|----|----|----|----|
 | Dice | GeoChatStuff.player.dice || /dice [sides] [count] | Rolls dice as specified in the arguments. If no arguments are passed it will roll a single D20. |
