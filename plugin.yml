@@ -1,6 +1,6 @@
 name: GeoChatStuff
-version: 0.0.2
-author: Geo54321
+version: 0.0.3
+author: Geo 'Derp' 54321
 main: me.Geo54321.GeoChatStuff.Main
 api-version: 1.16
 description: Adds some silly chat commands, mostly MCNSA nostalgia things
