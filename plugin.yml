@@ -1,0 +1,107 @@
+name: GeoChatStuff
+version: 0.0.2
+author: Geo54321
+main: me.Geo54321.GeoChatStuff.Main
+api-version: 1.16
+description: Adds some silly chat commands, mostly MCNSA nostalgia things
+prefix: BlameGeo!
+commands:
+  dice:
+    description: A simulated dice with the Random function, no arguments is one d20. Max sides = 1000, Max count = 10
+    aliases:
+      roll
+    permission: GeoChatStuff.player.dice
+    permission-message: I need to ask you to stop. That... command... is making people nervous.
+    usage: "Usage: /dice [sides] [count]"
+  dicks:
+    description: For accurately stating who is the sexiest templar
+    permission: GeoChatStuff.player.dicks
+    permission-message: I need to ask you to stop. That... command... is making people nervous.
+    usage: "Usage: /dicks"
+  geo:
+    description: Assigns the blame properly
+    aliases:
+      blame
+    permission: GeoChatStuff.player.geo
+    permission-message: I need to ask you to stop. That... command... is making people nervous.
+    usage: "Usage: /geo"
+  heart:
+    description: Shows love for another
+    aliases:
+      love
+    permission: GeoChatStuff.player.heart
+    permission-message: I need to ask you to stop. That... command... is making people nervous.
+    usage: "Usage: /heart [target]"
+  lolsloth:
+    description: Kicks the user in place of opping them
+    permission: GeoChatStuff.player.lolsloth
+    permission-message: I need to ask you to stop. That... command... is making people nervous.
+    usage: "Usage: /lolsloth"
+  pong:
+    description: Same as the old pong command
+    permission: GeoChatStuff.player.pong
+    permission-message: I need to ask you to stop. That... command... is making people nervous.
+    usage: "Usage: /pong"
+  liz:
+    description: §eREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+    aliases:
+      reeee
+    permission: GeoChatStuff.player.liz
+    permission-message: I need to ask you to stop. That... command... is making people nervous.
+    usage: "Usage: /liz"
+  war:
+    description: Geo is a dork, but he is War's dork.
+    permission: GeoChatStuff.player.war
+    permission-message: I need to ask you to stop. That... command... is making people nervous.
+    usage: "Usage: /war"
+permissions:
+  GeoChatStuff.player.dice:
+    description: Allows dice command
+    default: not op
+  GeoChatStuff.player.dicks:
+    description: Allows dicks command
+    default: not op
+  GeoChatStuff.player.geo:
+    description: Allows geo command
+    default: not op
+  GeoChatStuff.player.heart:
+    description: Allows heart command
+    default: not op
+  GeoChatStuff.player.liz:
+    description: Allows liz command
+    default: not op
+  GeoChatStuff.player.lolsoth:
+    description: Allows lolsloth command
+    default: not op
+  GeoChatStuff.player.pong:
+    description: Allows pong command
+    default: not op
+  GeoChatStuff.player.war:
+    description: Allows the war command
+    default: not op
+  GeoChatStuff.player.*:
+    description: Allows player chat commands
+    default: not op
+    children:
+      GeoChatStuff.player.dice: true
+      GeoChatStuff.player.dicks: true
+      GeoChatStuff.player.geo: true
+      GeoChatStuff.player.heart: true
+      GeoChatStuff.player.liz: true
+      GeoChatStuff.player.lolsloth: true
+      GeoChatStuff.player.pong: true
+      GeoChatStuff.player.war: true
+  GeoChatStuff.staff.liz:
+    description: Allows liz targetted
+    default: op
+  GeoChatStuff.staff.*:
+    description: Allows staff chat commands
+    default: op
+    children:
+      GeoChatStuff.staff.liz: true
+  GeoChatStuff.*:
+    description: Wildcard permission
+    default: op
+    children:
+      GeoChatStuff.player.*: true
+      GeoChatStuff.staff.*: true
